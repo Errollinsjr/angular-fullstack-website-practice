@@ -8,7 +8,9 @@ import { MyListingsPageComponent } from './my-listings-page/my-listings-page.com
 import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
 
 //full helps match to 'listings' because we might need an /:id for single listing
+//full prevents from interferring with other routes
 const routes: Routes = [
+  { path: '', redirectTo: '/listings', pathMatch: 'full'},
   { path: 'listings', component: ListingsPageComponent, pathMatch: 'full' },
   { path: 'listings/:id', component: ListingDetailPageComponent },
   { path: 'contact/:id', component: ContactPageComponent },
