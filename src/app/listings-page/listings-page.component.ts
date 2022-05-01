@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../types';
+import { fakeListings } from '../fake-data';
 
 @Component({
   selector: 'app-listings-page',
@@ -12,6 +13,7 @@ export class ListingsPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.listings = fakeListings;
   }
 
 }

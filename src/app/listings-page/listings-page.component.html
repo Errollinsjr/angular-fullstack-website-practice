@@ -1,1 +1,13 @@
-<p>listings-page works!</p>
+<div>
+    <div class="content-box" *ngFor="let listing of listings">
+        <a routerLink="/listings/{{listing.id}}">
+            <h3>{{listing.name}} - ${{listing.price}}</h3>
+        </a>
+    </div>
+</div>
+
+<!-- ngFor is a structural directive that lets you change strucutre depending on data in typeScript file -->
+<!-- using the ngFor above in content-box we want to display a seperate div for each listing -->
+<!-- the asterisk is how to denote structural directives -->
+<!-- ------------ -->
+<!-- routerLink allows us to change content of our page without switching page like hRef -->
