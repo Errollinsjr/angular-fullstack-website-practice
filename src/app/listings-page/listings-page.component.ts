@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Listing } from '../types';
 import { fakeListings } from '../fake-data';
 
+///rxJS and HTTPClient for network requests
+
 @Component({
   selector: 'app-listings-page',
   templateUrl: './listings-page.component.html',
